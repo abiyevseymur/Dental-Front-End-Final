@@ -95,3 +95,17 @@ $.fn.Accordion = function() {
         $(this).siblings().find(".accord_content").slideUp().siblings().find('i').removeClass('fa-minus');
     })
 }
+//progress bar first line
+$(document).ready(function(){
+    var count = 0;
+        console.log()
+    
+    function myCount(){
+        if(count>=$('.count1').text()-1){
+            clearInterval(myInterval);
+        }
+        count++;
+        $('.count1').text(count);
+    }
+    var myInterval = setInterval(myCount,20);
+});
