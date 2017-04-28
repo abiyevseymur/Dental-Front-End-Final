@@ -22,6 +22,8 @@
     background: none;
     border: none;
     border-bottom: 1px solid #e5e5e5; }
+    .content .myNav .myNavbar li {
+      float: left !important; }
     .content .myNav .tab {
       background: transparent; }
     .content .myNav .active {
@@ -45,10 +47,12 @@
         float: left; }
         .content .myNav1 .active a:hover {
           background: transparent; }
-    .content .myNav1 .myNavbar1 li {
-      float: none; }
-      .content .myNav1 .myNavbar1 li a {
-        padding: 5px 20px; }
+    .content .myNav1 .myNavbar1 {
+      margin: 7.5px 0px !important; }
+      .content .myNav1 .myNavbar1 li {
+        float: none; }
+        .content .myNav1 .myNavbar1 li a {
+          padding: 5px 20px; }
   .content .accordion {
     border-top: 1px solid #ccc; }
     .content .accordion .accordion_topic {

@@ -1,0 +1,41 @@
+.content {
+  padding-bottom: 100px; }
+  .content .list {
+    padding-top: 100px; }
+    .content .list .title {
+      text-transform: uppercase; }
+      .content .list .title .textLine {
+        position: relative;
+        height: 1px;
+        padding: 0;
+        background: #e5e5e5;
+        margin-bottom: 22px;
+        border: none; }
+        .content .list .title .textLine:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 1px;
+          width: 50px;
+          background: #f57e57; }
+  .content .number h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold; }
+    .content .number h1:before {
+      content: '';
+      height: 4px;
+      width: 70px;
+      background: #f57e57;
+      position: absolute;
+      bottom: 90px;
+      left: 38%; }
+  .content .number h3 {
+    margin-top: 60px;
+    color: #18afd3;
+    text-align: center;
+    font-weight: bold; }
+
+/*# sourceMappingURL=progressContent.css.map */

@@ -83,6 +83,11 @@ $darkgray:#7a7a7a;
         background: none;
         border: none;
         border-bottom: 1px solid #e5e5e5;
+        .myNavbar{
+            li{
+                float: left !important;
+            }
+        }
         .tab {
             background: transparent;
         }
@@ -115,8 +120,10 @@ $darkgray:#7a7a7a;
             }
         }
         .myNavbar1 {
+            margin: 7.5px 0px !important;
             li {
                 float: none;
+                
                 a {
                     padding: 5px 20px;
                 }

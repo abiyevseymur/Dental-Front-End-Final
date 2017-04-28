@@ -130,7 +130,8 @@
       .main .headerS .headLayotS .backgroundImgS .pageName {
         text-transform: uppercase;
         color: white;
-        padding: 25% 20%; }
+        padding: 25% 20%;
+        overflow: hidden; }
         .main .headerS .headLayotS .backgroundImgS .pageName h1 {
           font-size: 50px; }
       .main .headerS .headLayotS .backgroundImgS .path {
