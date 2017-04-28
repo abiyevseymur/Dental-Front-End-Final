@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FrontEndDental</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head-foot.css">
+    <link rel="stylesheet" href="css/accordionContent.css">
+    <script src="https://use.fontawesome.com/31850eae9f.js"></script>
+</head>
+
+<body>
+    <span id="scrollUp"><i class="fa fa-angle-double-up" aria-hidden="true"></i></span>
+    <!--scrollUp-->
+    <div class="main">
+        <div class="headerS">
+            <div class="container ">
+                <div class="row headS hidden-xs">
+                    <div class="col-md-3">
+                        <img src="img/logo-dark.png">
+                    </div>
+                    <div class="col-md-offset-3 col-md-3 number hidden-sm">
+                        <i class="fa fa-phone pull-left" aria-hidden="true"></i>
+                        <li><a href="#">1-800-1234-567</a></li>
+                        <li><a href="#">1-800-3214-654</a></li>
+                    </div>
+                    <div class="col-md-3 location hidden-sm">
+                        <i class="fa fa-map-marker pull-left" aria-hidden="true"></i>
+                        <a href="#">2130 Fulton Street San Diego CA 94117-1080 USA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuLineS hidden-xs">
+                <div class="menuS">
+                    <ul id='menuName'>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">team</a>
+                        </li>
+                        <li class='active'>
+                            <a href="#">pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="rd-navbar-megamenu" style="
+                                        position: absolute;
+                                        top: 60px;
+                                        left: 0;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6>Elements</h6>
+                                        <hr class="text-subline">
+                                        <ul class="list-unstyled offset-lg-top-25">
+                                            <li><a href="typography.html">Typography</a></li>
+                                            <li><a href="forms.html">Forms</a></li>
+                                            <li><a href="buttons.html">Buttons</a></li>
+                                            <li><a href="grid.html">Grid</a></li>
+                                            <li><a href="accordion.html">Tabs &amp; Accordions</a></li>
+                                            <li><a href="infographics.html">Progress Bars</a></li>
+                                            <li><a href="icons.html">Icons</a></li>
+                                            <li><a href="tables.html">Tables</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Pages 1</h6>
+                                        <hr class="text-subline">
+                                        <ul class="list-unstyled offset-lg-top-25">
+                                            <li><a href="team-member.html">Team Member Profile</a></li>
+                                            <li><a href="careers.html">Careers</a></li>
+                                            <li><a href="faq.html">FAQ Page</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                            <li><a href="maintenance.html">Maintenance</a></li>
+                                            <li><a href="under-constraction.html">Under construction</a></li>
+                                            <li><a href="login.html">Login/Register</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Pages 2</h6>
+                                        <hr class="text-subline">
+                                        <ul class="list-unstyled offset-lg-top-25">
+                                            <li><a href="clients.html">Clients</a></li>
+                                            <li><a href="partners.html">Partners</a></li>
+                                            <li><a href="privacy.html">Terms of Use</a></li>
+                                            <li><a href="search-results.html">Search Results</a></li>
+                                            <li><a href="404.html">404 Page</a></li>
+                                            <li><a href="503.html">503 Page</a></li>
+                                            <li><a href="make-an-appointment.html">Make an Appointment</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">services</a>
+                        </li>
+                        <li>
+                            <a href="#">departments</a>
+                        </li>
+                        <li>
+                            <a href="#">TIMETABLE</a>
+                        </li>
+                        <li>
+                            <a href="#">gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">blog</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                    <div id='searchX'>
+                        <label for="rd-navbar-search-form-input" class="form-label customLabel rd-input-label">Type and hit enter...</label>
+                        <input type="text" id='search'><a href="#" style="
+                            float: right;
+                            position: absolute;
+                            top: 20%;
+                            right: 5%;
+                            font-size: 24px;"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="headLayotS">
+                <div class="backgroundImgS">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="pageName">
+                                    <h1>TABS AND ACCORDIONS</h1>
+                                </div>
+                                <div class="path">
+                                    <ul>
+                                        <li><a href="index.html">Home</a> </li>
+                                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="index.html">Pages</a></li>
+                                        <li style='color:aliceblue'><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Typography</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!--HEAD-->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="list">
+                            <div class="title">
+                                <h1>CLASSIC TABS</h1>
+                                <hr class="textLine"></hr>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-default myNav">
+                            <ul class="nav navbar-nav myNavbar">
+                                <li id='#tab0' class="active tab"><a href="#tab0">TAB 1</a></li>
+                                <li id='#tab1' class="tab"><a href="#tab1">TAB 2</a></li>
+                                <li id='#tab2' class="tab"><a href="#tab2">TAB 3</a></li>
+                                <li id='#tab3' class="tab"><a href="#rab3">TAB 4</a></li>
+                            </ul>
+                        </nav>
+                        <ul class='text'>
+                            <li id='#tab0' class='hide show'> Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely
+                                have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has
+                                been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time.</li>
+                            <li id='#tab1' class='hide'>At SANA Medical Center we commit ourselves as a medical home for your kids and strive to ensure that each child receives care at the appropriate time in the appropriate setting. We strive to provide the best possible quality
+                                care to any child and their family with compassion and kindness.</li>
+                            <li id='#tab2' class='hide'>The experienced dentists of SANA Medical Center are your partners in dental care; they will work with you to give you a healthy and dazzling smile—making dental care both accessible and affordable. Whether you’re coming to
+                                our office for routine cleanings or are in need of restorative dentistry or oral surgery, our goal is to offer quality dental care and unmatched customer service, taking the time to address your concerns and answer your
+                                questions.
+                            </li>
+                            <li id='#tab3' class='hide'>Painful feelings such as anxiety, anger, depression, low self-esteem, and tension are a normal part of being human and can affect anyone. Sometimes these feelings are temporary and can be eased by rest, relaxation, exercise,
+                                good nutrition, and support of trusted friends. At other times, stressors, relationships, or past family experiences cannot be managed so easily and become overwhelming. When this happens, and you find it hard to function,
+                                you may want to seek professional help.</li>
+                        </ul>
+                        <div class="list">
+                            <div class="title">
+                                <h1>CLASSIC TABS</h1>
+                                <hr class="textLine"></hr>
+                            </div>
+                            <nav class="navbar navbar-default myNav1">
+                                <ul class="nav navbar-nav myNavbar1">
+                                    <li id='#tab0' class="tab active"><a href="#tab0">TAB 1</a></li>
+                                    <li id='#tab1' class="tab"><a href="#tab1">TAB 2</a></li>
+                                    <li id='#tab2' class="tab"><a href="#tab2">TAB 3</a></li>
+                                    <li id='#tab3' class="tab"><a href="#rab3">TAB 4</a></li>
+                                </ul>
+                            </nav>
+                            <ul class='text'>
+                                <li id='#tab0' class='hide show'> Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will
+                                    definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and
+                                    navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time.</li>
+                                <li id='#tab1' class='hide'>At SANA Medical Center we commit ourselves as a medical home for your kids and strive to ensure that each child receives care at the appropriate time in the appropriate setting. We strive to provide the best possible quality
+                                    care to any child and their family with compassion and kindness.</li>
+                                <li id='#tab2' class='hide'>The experienced dentists of SANA Medical Center are your partners in dental care; they will work with you to give you a healthy and dazzling smile—making dental care both accessible and affordable. Whether you’re coming
+                                    to our office for routine cleanings or are in need of restorative dentistry or oral surgery, our goal is to offer quality dental care and unmatched customer service, taking the time to address your concerns and answer
+                                    your questions.
+                                </li>
+                                <li id='#tab3' class='hide'>Painful feelings such as anxiety, anger, depression, low self-esteem, and tension are a normal part of being human and can affect anyone. Sometimes these feelings are temporary and can be eased by rest, relaxation, exercise,
+                                    good nutrition, and support of trusted friends. At other times, stressors, relationships, or past family experiences cannot be managed so easily and become overwhelming. When this happens, and you find it hard to function,
+                                    you may want to seek professional help.</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <div class="title">
+                                <h1>CLASSIC Accordion</h1>
+                                <hr class="textLine"></hr>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;" class="accordion">
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <h4>Is this a free clinic?<i class="fa pull-right fa-plus" aria-hidden="true"></i></h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>Denta-C is not a free clinic. We are non-profit community dental center. We offer a sliding fee scale to uninsured patients based upon family size and income.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <h4>What free services do you have?<i class="fa pull-right fa-plus" aria-hidden="true"></i></h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>We offer several state funded programs that provide free services if you are eligible. Eligibility is based on family size and income. We can also provide information regarding region’s dental insurance exchange. Please
+                                        call the clinic for more details about these programs.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <h4>Do I need an appointment?<i class="fa pull-right fa-plus" aria-hidden="true"></i></h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>Yes, we prefer that you have an appointment but same-day appointments are available.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <h4>Do you accept checks?<i class="fa pull-right fa-plus" aria-hidden="true"></i></h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>No, please note, that we accept cash, Visa, MasterCard, American Express, and Discover Card.</p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="title">
+                                    <h1>CLASSIC Accordion</h1>
+                                    <hr class="textLine"></hr>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 50px;" class="accordion1">
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <i class="fa pull-left fa-plus" aria-hidden="true"></i>
+                                    <h4>Is this a free clinic?</h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>Denta-C is not a free clinic. We are non-profit community dental center. We offer a sliding fee scale to uninsured patients based upon family size and income.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <i class="fa pull-left fa-plus" aria-hidden="true"></i>
+                                    <h4>What free services do you have?</h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>We offer several state funded programs that provide free services if you are eligible. Eligibility is based on family size and income. We can also provide information regarding region’s dental insurance exchange. Please
+                                        call the clinic for more details about these programs.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <i class="fa pull-left fa-plus" aria-hidden="true"></i>
+                                    <h4>Do I need an appointment?</h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>Yes, we prefer that you have an appointment but same-day appointments are available.</p>
+                                </div>
+                            </div>
+                            <div class="accordion_topic">
+                                <div class="accord_head">
+                                    <i class="fa pull-left fa-plus" aria-hidden="true"></i>
+                                    <h4>Do you accept checks?</h4>
+                                </div>
+                                <div class="accord_content">
+                                    <p>No, please note, that we accept cash, Visa, MasterCard, American Express, and Discover Card.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <div class="footerS">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="logo">
+                            <img src="img/logo.png">
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-rss" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="contactUs">
+                            <div class="footTitle">
+                                <h4>CONTACT US</h4>
+                                <hr class="textLine"></hr>
+
+                            </div>
+                            <ul>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="#"> 1-800-1234-567, 1-800-3214-321</a></li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Your e-mail...SUBSCRIBE CONTACT US 1-800-1234-567, 1-800-3214-321 </a></li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">info@demolink.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="news">
+                            <div class="footTitle">
+                                <h4>NEWSLETTER</h4>
+                                <hr class="textLine"></hr>
+                            </div>
+                            <p>Enter your email address to receive up-to-date news and new patient information.</p>
+                            <nav class="navbar navbar-light bg-faded">
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Your e-mail..">
+                                    <button class="btn viewBtn btn-outline-success my-2 my-sm-0" type="submit">SUBSCRIBE</button>
+                                </form>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/scriptSecond.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/object.js"></script>
+
+</html>
