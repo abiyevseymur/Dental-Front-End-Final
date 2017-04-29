@@ -88,10 +88,33 @@ $.fn.Navigate = function() {
 };
 //Accordion Page 
 $.fn.Accordion = function() {
-    var accordion = $(this);
-    accordion.children(".accordion_topic").click(function() {
-        $(this).find('i').toggleClass('fa-minus');
-        $(this).find(".accord_content").slideToggle();
-        $(this).siblings().find(".accord_content").slideUp().siblings().find('i').removeClass('fa-minus');
+        var accordion = $(this);
+        accordion.children(".accordion_topic").click(function() {
+            $(this).find('i').toggleClass('fa-minus');
+            $(this).find(".accord_content").slideToggle();
+            $(this).siblings().find(".accord_content").slideUp().siblings().find('i').removeClass('fa-minus');
+        })
+    }
+    //progress bar first line
+
+$.fn.Progress = function(countClass, speed) {
+    var count = 0;
+    var endCount = parseInt($(countClass).text());
+
+    function myCount(e) {
+        count++;
+        if (count > endCount - 1) {
+            clearInterval(myInterval);
+        }
+        $(countClass).text(count);
+    }
+    var myInterval = setInterval(myCount, speed);
+};
+//Skill Bar
+$.fn.skillBar = function(countClass, whichWidth) {
+    var endCount = parseInt($(countClass).text())
+    $(whichWidth).css({
+        'width': endCount + '%',
+        'transition': '1.8s all'
     })
 }
