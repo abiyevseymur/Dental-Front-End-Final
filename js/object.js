@@ -17,20 +17,26 @@ $(document).ready(function() {
         $(".accordion1").Accordion();
     })
     //progress
-$(document).ready(function() {
-    $('.number').Progress('.count', 1)
-    $('.number').Progress('.count1', 1)
-    $('.number').Progress('.count2', 1)
-    $('.number').Progress('.count3', 1)
-    $('.progressName').Progress('.count4', 20);
-    $('.progressName').Progress('.count5', 20);
-    $('.progressName').Progress('.count6', 20);
-    $('.progressName').Progress('.count7', 20);
+$(document).scroll(function() {
+    if (window.pageYOffset > 200) {
+        $('.number').Progress('.count', 35, 1)
+        $('.number').Progress('.count1', 3352, 1)
+        $('.number').Progress('.count2', 55, 1)
+        $('.number').Progress('.count3', 98, 1)
+        $('.progressName').Progress('.count4', 50, 5);
+        $('.progressName').Progress('.count5', 20, 5);
+        $('.progressName').Progress('.count6', 87, 5);
+        $('.progressName').Progress('.count7', 37, 5);
+    };
+
 });
 //Skill bar don't use in future
-$(document).ready(function() {
-    $().skillBar('.count4', '.progressFirst')
-    $().skillBar('.count5', '.progressSecond')
-    $().skillBar('.count6', '.progressThird')
-    $().skillBar('.count7', '.progressFourth')
+$(document).scroll(function() {
+    if (window.pageYOffset > 400) {
+        $().skillBar(50, '.progressFirst')
+        $().skillBar(20, '.progressSecond')
+        $().skillBar(87, '.progressThird')
+        $().skillBar(37, '.progressFourth')
+    }
+
 })

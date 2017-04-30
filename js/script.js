@@ -96,25 +96,28 @@ $.fn.Accordion = function() {
         })
     }
     //progress bar first line
+var count = 0;
 
-$.fn.Progress = function(countClass, speed) {
-    var count = 0;
-    var endCount = parseInt($(countClass).text());
+$.fn.Progress = function(countClass, endCount, speed) {
 
     function myCount(e) {
+
         count++;
-        if (count > endCount - 1) {
+        if (count > endCount) {
+
             clearInterval(myInterval);
+            return false;
         }
         $(countClass).text(count);
+
     }
     var myInterval = setInterval(myCount, speed);
+
 };
-//Skill Bar
-$.fn.skillBar = function(countClass, whichWidth) {
-    var endCount = parseInt($(countClass).text())
+//skill BAr
+$.fn.skillBar = function(count, whichWidth) {
     $(whichWidth).css({
-        'width': endCount + '%',
+        'width': count + '%',
         'transition': '1.8s all'
     })
 }

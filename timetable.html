@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/circleProgress.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/head-foot.css">
-    <link rel="stylesheet" href="css/progressContent.css">
+    <link rel="stylesheet" href="css/timetable-css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/timetable-css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/timetable-css/timetableContent.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="https://use.fontawesome.com/31850eae9f.js"></script>
 
 </head>
@@ -139,7 +141,7 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <div class="pageName">
-                                    <h1>TABS AND ACCORDIONS</h1>
+                                    <h1>TIMETABLE</h1>
                                 </div>
                                 <div class="path">
                                     <ul>
@@ -157,125 +159,60 @@
         <div class="clearfix"></div>
         <!--HEAD-->
         <div class="content">
-            <div class="container">
-                <div class="col-md-12">
-                    <div class="list">
-                        <div class="title">
-                            <h4>COUNTERS</h4>
-                            <div class="textLine"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number" onload="myCount()">
-                            <h1 class='count'>0</h1>
-                            <h3>Years of Experience</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <h1 class='count1'>0</h1>
-                            <h3>Satisfied Patients</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <h1 class='count2'>0</h1>
-                            <h3>Qualified Doctors</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <h1 class='count3'>0</h1>
-                            <h3>Departments</h3>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="list">
-                        <div class="title">
-                            <h4>skill bar</h4>
-                            <div class="textLine"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="progressName">
-                            <h5 class='pull-left'>PREVENTIVE CARE</h5>
-                            <h5 class='count4'>0</h5>
-                            <h5 class='percent'>%</h5>
+            <div id="timetable" class="container">
+                <ul>
+                    <li class="active">Adult Dentist</li>
+                    <li>Dentist </li>
+                    <li>Dental Hygineist</li>
+                    <li>Cosmetic Dentist</li>
+                    <li>Pediatric Dentist</li>
+                </ul>
+                <div id="tableScroll">
+                    <table border=1 class="table">
+                        <thead>
+                            <th>Hours</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednsday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:00-09:00</td>
+                            </tr>
+                            <tr>
+                                <td>09:00-10:00</td>
+                            </tr>
+                            <tr>
+                                <td>10:00-11:00</td>
+                            </tr>
+                            <tr>
+                                <td>11:00-12:00</td>
+                            </tr>
+                            <tr>
+                                <td>12:00-13:00</td>
+                            </tr>
+                            <tr>
+                                <td>13:00-14:00</td>
+                            </tr>
+                            <tr>
+                                <td>14:00-15:00</td>
+                            </tr>
+                            <tr>
+                                <td>15:00-16:00</td>
+                            </tr>
+                            <tr>
+                                <td>16:00-17:00</td>
+                            </tr>
+                            <tr>
+                                <td>17:00-18:00</td>
+                            </tr>
 
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="progress MyProgressUp">
-                            <div class="progress-bar progress-bar-primary myProgress progressFirst" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                        <div class="progressName">
-                            <h5 class='pull-left'>TEETH WHITENING</h5>
-                            <h5 class='count5'>0</h5>
-                            <h5 class='percent'>%</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="progress MyProgressUp">
-                            <div class="progress-bar progress-bar-primary myProgress progressSecond" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                        <div class="progressName">
-                            <h5 class='pull-left'>RESTORATIVE CARE</h5>
-                            <h5 class='count6'>0</h5>
-                            <h5 class='percent'>%</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="progress MyProgressUp">
-                            <div class="progress-bar progress-bar-primary myProgress progressThird" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                        <div class="progressName">
-                            <h5 class='pull-left'>PEDIATRIC DENTISTRY</h5>
-                            <h5 class='count7'>0</h5>
-                            <h5 class='percent'>%</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="progress MyProgressUp">
-                            <div class="progress-bar progress-bar-primary myProgress progressFourth" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="list">
-                        <div class="title">
-                            <h4>skill bar</h4>
-                            <div class="textLine"></div>
-                        </div>
-                    </div>
-                    <div class="staticProgress">
-                        <div class="col-md-3">
-                            <div id="circle">
-                                <span>50%</span>
-                            </div>
-                            <h3>Preventive Care</h3>
-                        </div>
-                        <div class="col-md-3">
-                            <div id="circle1">
-                                <span>20%</span>
-                            </div>
-                            <h3>Restorative Care</h3>
-                        </div>
-                        <div class="col-md-3">
-                            <div id="circle2">
-                                <span>87%</span>
-                            </div>
-                            <h3>Pediatric Dentistry</h3>
-                        </div>
-                        <div class="col-md-3">
-                            <div id="circle3">
-                                <span>37%</span>
-                            </div>
-                            <h3>Teeth Whitening</h3>
-                        </div>
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -331,42 +268,11 @@
     </div>
 </body>
 <script>
-    $('#circle').circleProgress({
-        value: 0.5,
-        size: 100,
-        startAngle: 4.7,
-        fill: {
-            gradient: ["#18afd3", "#18afd3"]
-        }
-    });
-    $('#circle1').circleProgress({
-        value: 0.2,
-        size: 100,
-        startAngle: 4.7,
-        fill: {
-            gradient: ["#18afd3", "#18afd3"]
-        }
-    });
-    $('#circle2').circleProgress({
-        value: 0.87,
-        size: 100,
-        startAngle: 4.7,
-        fill: {
-            gradient: ["#18afd3", "#18afd3"]
-        }
-    });
-    $('#circle3').circleProgress({
-        value: 0.37,
-        size: 100,
-        startAngle: 4.7,
-        fill: {
-            gradient: ["#18afd3", "#18afd3"]
-        }
-    });
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 </script>
-<script src="js/script.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/timetable.js"></script>
 <script src="js/scriptSecond.js"></script>
 <script src="js/jquery.scrollUp.min.js"></script>
-<script src="js/object.js"></script>
 
 </html>
