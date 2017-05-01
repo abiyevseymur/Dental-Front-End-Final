@@ -1,0 +1,51 @@
+.content {
+  padding-bottom: 100px; }
+  .content .list {
+    padding-top: 100px; }
+    .content .list .title {
+      text-transform: uppercase;
+      text-align: center; }
+      .content .list .title .textLine {
+        position: relative;
+        height: 1px;
+        padding: 0;
+        margin-bottom: 22px;
+        border: none; }
+        .content .list .title .textLine:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 47%;
+          height: 4px;
+          width: 80px;
+          background: #18afd3; }
+  .content .listS {
+    padding-top: 20px; }
+    .content .listS .titleS {
+      text-transform: uppercase; }
+      .content .listS .titleS ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 20px; }
+        .content .listS .titleS ul li {
+          cursor: pointer;
+          color: #868686;
+          letter-spacing: 0.06em; }
+        .content .listS .titleS ul .active:before {
+          content: '';
+          height: 1px;
+          background: #f57e57;
+          width: 14%;
+          position: absolute;
+          top: 262px; }
+
+@media only screen and (max-width: 600px) {
+  .content .list .title .textLine:before {
+    left: 43%; } }
+@media only screen and (max-width: 1000px) {
+  .content .listS .titleS ul .active:before {
+    top: 281px; } }
+
+/*# sourceMappingURL=appointmentContent.css.map */

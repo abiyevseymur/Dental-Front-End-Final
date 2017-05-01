@@ -116,8 +116,16 @@ $.fn.Progress = function(countClass, endCount, speed) {
 };
 //skill BAr
 $.fn.skillBar = function(count, whichWidth) {
-    $(whichWidth).css({
-        'width': count + '%',
-        'transition': '1.8s all'
-    })
-}
+        $(whichWidth).css({
+            'width': count + '%',
+            'transition': '1.8s all'
+        })
+    }
+    //calendar menu table
+$(document).ready(function() {
+    $('.titleS ul li').click(function() {
+        $('.titleS ul li').removeClass('active')
+        $(this).toggleClass('active');
+    });
+});
+//

@@ -1,0 +1,159 @@
+$goy:#18afd3;
+$sari:#f57e57;
+$boz:#F1F3F9;
+$darkgray:#7a7a7a;
+@mixin tittle {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+@mixin border {
+    width: 8%;
+    position: absolute;
+    bottom: -30px;
+    left: 46%;
+    border-bottom: 3px solid $sari;
+    content: '';
+}
+
+@mixin btn {
+    background: $sari;
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    &:hover {
+        background: $goy;
+    }
+}
+
+@mixin hr {
+    text-transform: uppercase;
+    .textLine {
+        position: relative;
+        height: 1px;
+        padding: 0;
+        margin-bottom: 22px;
+        border: none;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 80px;
+            background: $goy;
+        }
+    }
+}
+
+@mixin hrS {
+    position: relative;
+    height: 1px;
+    padding: 0;
+    background: #e5e5e5;
+    margin-bottom: 22px;
+    border: none;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 18%;
+        background: $sari;
+    }
+}
+
+// MY SASS
+.content {
+    padding-bottom: 100px;
+    .list {
+        padding-top: 100px;
+        .title {
+            text-transform: uppercase;
+            text-align: center;
+            .textLine {
+                position: relative;
+                height: 1px;
+                padding: 0;
+                margin-bottom: 22px;
+                border: none;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 47%;
+                    height: 4px;
+                    width: 80px;
+                    background: $goy;
+                }
+            }
+        }
+    }
+    .listS {
+        padding-top: 20px;
+        .titleS {
+            text-transform: uppercase;
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                border-bottom: 1px solid #d8d8d8;
+                padding-bottom: 20px;
+                li {
+                    cursor: pointer;
+                    color: #868686;
+                    letter-spacing: 0.06em;
+                }
+                .active {
+                    &:before {
+                        content: '';
+                        height: 1px;
+                        background: $sari;
+                        width: 14%;
+                        position: absolute;
+                        top: 262px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .content {
+        .list {
+            .title {
+                .textLine {
+                    &:before {
+                        left: 43%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .content {
+        .listS {
+            .titleS {
+                ul {
+                    .active {
+                        &:before {
+                            top: 281px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
