@@ -27,7 +27,7 @@ $(document).ready(function() {
             $('.customLabel').css({ 'display': 'block', 'cursor': 'text' })
             $('#search').css('display', 'block');
             $('#menuName').css('display', 'none');
-            $('#searchX i').removeClass('fa-search').addClass('fa-times');
+            $('#searchX i').css({ 'transform': 'rotate(360deg)', 'transition': '0.3s ease-out' }).removeClass('fa-search').addClass('fa-times');
             $('.form-label,#search').click(function() {
                 $('.form-label').css({
                     'top': '0',
@@ -39,7 +39,7 @@ $(document).ready(function() {
             $('.customLabel').css({ 'display': 'none' })
             $('#search').css('display', 'none');
             $('#menuName').css({ 'display': 'flex' });
-            $('#searchX i').removeClass('fa-times').addClass('fa-search');
+            $('#searchX i').css({ 'transform': 'rotate(0deg)', 'transition': '0.3s ease-out' }).removeClass('fa-times').addClass('fa-search');
             action = 1;
         }
     });

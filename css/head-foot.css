@@ -65,15 +65,19 @@
       margin: 0;
       transition: 0.3s all; }
       .main .headerS .menuLineS .menuS #menuName .active {
-        background: #f57e57; }
+        background: #f57e57;
+        transition: 0.3s ease-out; }
       .main .headerS .menuLineS .menuS #menuName li {
         display: inline-flex;
-        padding: 18px 10px;
+        padding: 20px 10px;
         justify-content: center;
         transition: 0.3s all; }
         .main .headerS .menuLineS .menuS #menuName li:hover .rd-navbar-megamenu {
-          display: block; }
+          display: block;
+          border-radius: 5px;
+          border: 1px solid #ccc; }
         .main .headerS .menuLineS .menuS #menuName li .rd-navbar-megamenu {
+          transition: 0.3s all;
           position: absolute;
           background: white;
           color: black;
@@ -82,24 +86,27 @@
           .main .headerS .menuLineS .menuS #menuName li .rd-navbar-megamenu ul {
             padding-left: 20px; }
           .main .headerS .menuLineS .menuS #menuName li .rd-navbar-megamenu .list-unstyled li {
-            display: block; }
-          .main .headerS .menuLineS .menuS #menuName li .rd-navbar-megamenu a {
-            color: #18afd3; }
-        .main .headerS .menuLineS .menuS #menuName li:hover {
-          background: #f57e57; }
+            display: block;
+            transition: 0.3s ease-out;
+            padding: 8px 0px; }
+            .main .headerS .menuLineS .menuS #menuName li .rd-navbar-megamenu .list-unstyled li:hover a {
+              color: #f57e57; }
+            .main .headerS .menuLineS .menuS #menuName li .rd-navbar-megamenu .list-unstyled li a {
+              color: #18afd3;
+              font-size: 14px;
+              transition: 0.3s ease-out; }
         .main .headerS .menuLineS .menuS #menuName li:hover:last-child {
           background: transparent; }
         .main .headerS .menuLineS .menuS #menuName li a {
           color: white;
           text-transform: uppercase;
-          font-size: 18px;
           text-decoration: none; }
     .main .headerS .menuLineS .menuS #searchX .customLabel {
       color: white;
       position: absolute;
       top: 10%;
       font-size: 28px;
-      padding-left: 20px;
+      padding-left: 40px;
       display: none;
       transition: 0.3s all; }
     .main .headerS .menuLineS .menuS #searchX a {

@@ -588,6 +588,8 @@ body {
   background: white; }
   .main .icon {
     padding: 100px 0; }
+    .main .icon .faSecond {
+      padding: 19px 25px !important; }
     .main .icon .iconX {
       display: flex;
       align-items: center;

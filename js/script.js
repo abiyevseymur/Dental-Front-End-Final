@@ -23,15 +23,23 @@ $.fn.Slider = function(dotName, setting = {}) {
         });
     }
     //responsive dots
-$(document).ready(function() {
+$(function() {
     var dot = '<li class="dotMedia"></li>';
     var countPerson = $('.mediaPerson').length;
     var countDots = 3;
-    if ($(window).width() < 1000) {
-        for (i = 0; i < (countPerson - countDots); i++) {
-            $('.dotesMedia').append(dot);
+    var added = false;
+
+    function checkSize() {
+        if (!added && $(window).width() < 1000) {
+            for (i = 0; i < (countPerson - countDots); i++) {
+                $('.dotesMedia').append(dot);
+            }
+            added = true;
+
         }
     }
+    $(window).resize(checkSize);
+    checkSize();
 });
 
 //menu Icon

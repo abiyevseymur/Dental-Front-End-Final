@@ -155,18 +155,22 @@
                             transition: 0.3s all;
                             .active {
                                 background: $sari;
+                                transition: 0.3s ease-out;
                             }
                             li {
                                 display: inline-flex;
-                                padding: 18px 10px;
+                                padding: 20px 10px;
                                 justify-content: center;
                                 transition: 0.3s all;
                                 &:hover {
                                     .rd-navbar-megamenu {
                                         display: block;
+                                        border-radius: 5px;
+                                        border: 1px solid #ccc;
                                     }
                                 }
                                 .rd-navbar-megamenu {
+                                    transition: 0.3s all;
                                     position: absolute;
                                     background: white;
                                     color: black;
@@ -178,14 +182,20 @@
                                     .list-unstyled {
                                         li {
                                             display: block;
+                                            transition: 0.3s ease-out;
+                                            padding: 8px 0px;
+                                            &:hover {
+                                                a {
+                                                    color: $sari;
+                                                }
+                                            }
+                                            a {
+                                                color: $goy;
+                                                font-size: 14px;
+                                                transition: 0.3s ease-out;
+                                            }
                                         }
                                     }
-                                    a {
-                                        color: $goy;
-                                    }
-                                }
-                                &:hover {
-                                    background: $sari;
                                 }
                                 &:hover:last-child {
                                     background: transparent;
@@ -193,7 +203,6 @@
                                 a {
                                     color: white;
                                     text-transform: uppercase;
-                                    font-size: 18px;
                                     text-decoration: none;
                                 }
                             }
@@ -204,7 +213,7 @@
                                 position: absolute;
                                 top: 10%;
                                 font-size: 28px;
-                                padding-left: 20px;
+                                padding-left: 40px;
                                 display: none;
                                 transition: 0.3s all;
                             }
