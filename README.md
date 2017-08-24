@@ -1,5 +1,5 @@
 <h1>Front End Main Project</h1> <br>
- # Used plugins:
+# Used plugins:
 - RD Navbar (http://cms.devoffice.com/coding-dev/rd-navbar/documentation/index.php?lang=ru&section=example)
 - Easy-Responsive-Tabs-to-Accordion (https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion)
 - RD Calendar (https://www.templatemonster.com/help/js-animated-how-to-work-with-rd-calendar.html#gref)
